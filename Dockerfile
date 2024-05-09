@@ -5,4 +5,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . ./
 RUN cd data && tar -xvf cocoput_table.tsv.tar.gz && cd ..
-ENTRYPOINT ["streamlit", "run", "streamlit.py", "--server.port=8080", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "1streamlit.py", "--server.port=8080", "--server.address=0.0.0.0"]
