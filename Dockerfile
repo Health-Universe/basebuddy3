@@ -1,4 +1,6 @@
 FROM python:3.8
+# Install Git
+RUN apt-get update && apt-get install -y git
 EXPOSE 8080
 WORKDIR /app
 COPY requirements.txt .
